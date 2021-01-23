@@ -23,6 +23,8 @@ QT用户图形化界面开发的简单练习
 
 直接运行大概率没有bug
 
+也可以选择打包好的去玩一玩，目前仅限Windows用户 https://github.com/yjr-1100/CSU_minidesign/releases
+
 ---
 
 ### 演示效果
