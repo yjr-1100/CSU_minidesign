@@ -14,6 +14,8 @@ QT用户图形化界面开发的简单练习
 
 但是DFS的代码在QT里有一点小问题，没有修好，这个功能就注释掉了
 
+---
+
 ### 食用方法
 安装好QT Creater 后将本文件夹clone 或者 下载到电脑中
 
@@ -21,5 +23,8 @@ QT用户图形化界面开发的简单练习
 
 直接运行大概率没有bug
 
+---
 
+### 演示效果
 
+![image](https://github.com/yjr-1100/CSU_minidesign/blob/main/Navigation_System_in_CSU/show.gif )   
