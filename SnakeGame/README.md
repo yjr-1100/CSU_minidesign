@@ -17,7 +17,7 @@
 
 直接运行大概率没有bug
 
-也可以选择打包好的去玩一玩，需要拥有jvm环境 https://github.com/yjr-1100/CSU_minidesign/releases
+也可以选择打包好的去玩一玩，需要拥有jvm环境 直接双击Snakegeme.jar
 
 ---
 
