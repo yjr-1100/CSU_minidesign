@@ -1,3 +1,6 @@
+// y1192167274
+// XKYTGILWKSSUQFFA
+//wae2y3i5 密码
 import javax.mail.*;
 import javax.swing.*;
 import java.awt.*;
@@ -240,6 +243,7 @@ public class MyFrame {
                     titletext.setText("");
                 } catch (Exception exception) {
                     exception.printStackTrace();
+//                    System.out.println("kkkkkkkkkk");
                     fujian_lists.clear();
                     contenttext.setText("");
                     fujiantext.setText("");
@@ -303,6 +307,7 @@ public class MyFrame {
         receive_table.setSelectionBackground(new Color(217, 229, 239));
         receive_table.setSelectionForeground(new Color(12,12,12));
         receive_table.setBackground(new Color(245, 249, 252));
+//        receive_table.setShowVerticalLines(false);
         //表头剧中
         DefaultTableCellRenderer renderer = (DefaultTableCellRenderer) receive_table.getTableHeader().getDefaultRenderer();
         renderer.setHorizontalAlignment(renderer.CENTER);
@@ -400,7 +405,7 @@ public class MyFrame {
                         receivepersontext.setBounds(70,70,400,15);
                         receivepersontext.setForeground(new Color(51,51,51));
                         receivepersontext.setFont(new Font("微软雅黑",0,12));
-                        receivepersontext.setText(myEmailAccount);
+                        receivepersontext.setText("y1192167274");
                         receivetime.setBounds(20,95,40,15);
                         receivetime.setFont(new Font("微软雅黑",0,12));
                         receivetime.setForeground(new Color(153,153,153));
@@ -543,6 +548,8 @@ public class MyFrame {
         panel.add(headlable);
         panel.add(panel1);
         panel.add(panel2);
+        ////////////////////////
+        ///////////////////////
         panel2.setVisible(false);panel1.setVisible(true);
         panel.setVisible(true);
         jf.add(panel);
@@ -582,6 +589,9 @@ public class MyFrame {
         mm.addBodyPart(text);
         //创建附件节点
         if(!ls.isEmpty()){
+            System.out.println("ksksksksksksksksksk");
+            System.out.println("ksksksksksksksksksk");
+            System.out.println("ksksksksksksksksksk");
             MimeBodyPart attachment = new MimeBodyPart();
             for(String st:ls){
                 System.out.println(st);
@@ -727,16 +737,21 @@ public class MyFrame {
     }
     //解析邮件
     public void parseMessage(Message... messages) throws MessagingException, IOException {
-        if (messages == null || messages.length < 1)
-            throw new MessagingException("收件箱为空!");
-        data= new String [messages.length][4];
-        // 解析邮件的一些信息
-        for (int i = 0, count = messages.length; i < count; i++) {
-            MimeMessage msg = (MimeMessage) messages[i];
-            data[i][0] = getFrom(msg);
-            data[i][1] = getSubject(msg);
-            data[i][2] =  getSentDate(msg, null);
-            data[i][3] = "删除";
+        if (messages == null || messages.length < 1){
+            data = new String[][]{
+                {" ", " ", " "," "}
+            };
+            JOptionPane.showMessageDialog(null, "没有信息","收信箱为空",JOptionPane.INFORMATION_MESSAGE);
+        }else{
+            data= new String [messages.length][4];
+            // 解析邮件的一些信息
+            for (int i = 0, count = messages.length; i < count; i++) {
+                MimeMessage msg = (MimeMessage) messages[i];
+                data[i][0] = getFrom(msg);
+                data[i][1] = getSubject(msg);
+                data[i][2] =  getSentDate(msg, null);
+                data[i][3] = "删除";
+            }
         }
     }
 
