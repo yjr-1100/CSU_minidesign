@@ -1,6 +1,3 @@
-// y1192167274
-// XKYTGILWKSSUQFFA
-//wae2y3i5 密码
 import javax.mail.*;
 import javax.swing.*;
 import java.awt.*;
