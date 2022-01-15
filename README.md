@@ -1,4 +1,4 @@
-# CSU_minidesign （校园导航，贪吃蛇，邮箱客户端，模拟数据库，csuweb实验）
+# CSU_minidesign （CSU校园导航，贪吃蛇，邮箱客户端，模拟数据库，csuweb实验）
 本仓库存放一些CSU的简单课设
 
 ### 1.CSU校园导航（QT）
