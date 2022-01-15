@@ -1,0 +1,103 @@
+.fright {
+  position: fixed;
+  width: auto;
+  top: 50%;
+  right: 0;
+  z-index: 99;
+  transform: translateY(-50%);
+}
+.fright ul {
+  text-align: right;
+  list-style: none;
+}
+.fright ul li {
+  margin: 1px 0;
+}
+.fright ul li a {
+  overflow: hidden;
+  display: inline-block;
+  font-size: 14px;
+  text-align: left;
+  transition: 0.3s;
+  background-color: rgba(0, 59, 122, 0.7);
+  line-height: 51px;
+  height: 51px;
+  width: 120px;
+  color: #aed7ff;
+}
+.fright ul li a i {
+  width: 51px;
+  height: 51px;
+  float: left;
+  display: block;
+}
+.fright ul li a .i1 {
+  background-image: url("../images/i-q11-1.png");
+}
+.fright ul li a .i2 {
+  background-image: url("../images/i-q12-1.png");
+}
+.fright ul li a .i3 {
+  background-image: url("../images/i-q13-1.png");
+}
+.fright ul li a .i4 {
+  background-image: url("../images/i-q14-1.png");
+}
+.fright ul li a .i5 {
+  background-image: url("../images/i-qyx.png");
+}
+.fright ul li a .i6 {
+  background-image: url("../images/i-qxx.png");
+}
+.fright ul li a .i7 {
+  background-image: url("../images/i-q24-1.png");
+}
+.fright ul li:hover a {
+  width: 120px ;
+  background-color: #bc8d00;
+  color: white;
+  cursor: pointer;
+}
+.fright ul li:hover a .i1 {
+  background-image: url("../images/i-q11.png");
+}
+.fright ul li:hover a .i2 {
+  background-image: url("../images/i-q12.png");
+}
+.fright ul li:hover a .i3 {
+  background-image: url("../images/i-q13.png");
+}
+.fright ul li:hover a .i4 {
+  background-image: url("../images/i-q14.png");
+}
+.fright ul li:hover a .i5 {
+  background-image: url("../images/i-qyx-s.png");
+}
+.fright ul li:hover a .i6 {
+  background-image: url("../images/i-qxx-s.png");
+}
+.fright ul li:hover a .i7 {
+  background-image: url("../images/i-q24.png");
+}
+.fright ul .down {
+  display: block;
+  cursor: pointer;
+  float: right;
+  width: 120px ;
+}
+.fright ul .down i {
+  display: block;
+  width: 51px;
+  height: 51px;
+  margin: 0 auto;
+  background-image: url("../images/i-q21.png");
+}
+.on ul li a {
+  width: 51px;
+}
+.on ul .down {
+  width: 51px;
+}
+.on ul .down i {
+  background-image: url("../images/i-q21-1.png");
+}

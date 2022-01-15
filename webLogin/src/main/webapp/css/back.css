@@ -1,0 +1,36 @@
+.back {
+  width: 100%;
+  background-image: url('../images/bg-q5.jpg');
+  background-size: cover;
+  height: 67.375rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.back .imgwrap {
+  justify-content: space-evenly;
+  width: 80%;
+  min-width: 72.5rem;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.back .imgwrap h3 {
+  writing-mode: vertical-lr;
+  letter-spacing: 5px;
+  color: #0751a1;
+  line-height: 1.02rem;
+  font-size: 1.5625vw;
+  font-weight: normal;
+  margin-right: 0.625rem;
+}
+.back .imgwrap div {
+  width: 14rem;
+  height: 10rem;
+  overflow: hidden;
+}
+.back .imgwrap div img:hover {
+  transform: scale(1.05);
+  transition: 0.5s;
+}

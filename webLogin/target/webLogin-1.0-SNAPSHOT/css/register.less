@@ -1,0 +1,135 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+input { outline: none;}
+
+.main {
+    background-image: url("../images/bg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    min-height: 730px;
+    display: inline-block;
+    .register_warp {
+        
+        width: 25vw;
+        height: 45vh;
+        min-height: 450px;
+        background-color: rgba(244, 248, 248, 0.7);
+        border-radius: 5px;
+        margin: 0 auto;
+        margin-top: 10%;
+        padding: 20px 0;
+        display: flex;
+        flex-direction: column;
+        
+        div {
+            width: 90%;
+            padding: 0 5%;
+            margin-top: 20px;
+            display: flex;
+            height: 30px;
+            
+            span {
+                width: 21%;
+                text-align: right;
+                padding-right: 20px;
+                height: 100%;
+                line-height: 30px;
+            }
+            input{
+                border-radius: 5px;
+                border: 0;
+                width: 50%;
+                height: 100%;
+                padding-left: 10px;
+            }
+            
+            .tips{
+                width:auto;
+                text-align: left;
+                padding-left: 20px;
+                font-size: 28px;
+                font-weight: 600;
+            }
+        
+        }
+        #title{
+            margin-top: 0;
+            margin-bottom: 30px;
+            span{
+            text-align: center;
+            font-size: 30px;
+            width: 100%;
+            font-weight: 600;
+            padding: 0;
+            }
+        }
+        #checkcode{
+            height: 50px;
+            display:flex;
+            align-items: center;
+            span{
+                height: 100%;
+                line-height: 50px;
+            }
+            input{
+                height: 40px;
+                width: 28%;
+                margin-right: 2%;
+
+            }
+            img:hover{
+                cursor: pointer;
+            }
+        }
+        #movecode{
+            height: 30px;
+            display:flex;
+            align-items: center;
+            input{
+                height: 30px;
+                width: 28%;
+                margin-right: 2%;
+            }
+            #codebtn{
+                background-color:transparent;
+                padding: 0;
+                text-align: center;
+                color: #4f82db;
+                font-size: 16px;
+                font-weight: 600;
+                margin: 0;
+                width: auto;
+            }
+            #codebtn:hover{
+                cursor: pointer;
+                color: #2b6cdb;
+            }
+        }
+        .subbtn{
+            display: block;
+            margin: 20px auto;
+            width: 60%;
+            height: 50px;
+            font-size: 20px;
+            border: 0;
+            border-radius: 5px;
+            background-color: #2368de ;
+            color: #fff;
+            font-weight: 500;
+            
+        }
+        .subbtn:hover{
+            cursor: pointer;
+            background-color: #3072e4 ;
+
+        }
+    }
+}
+
+
+
+

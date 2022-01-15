@@ -1,0 +1,65 @@
+.banner {
+  height: 840px;
+  min-height: 160px;
+  width: 100%;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+}
+.banner ul {
+  width: 100%;
+  height: 100%;
+}
+.banner ul li {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: opacity 1s ease-in;
+}
+.banner ul li a {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.banner ul .opc_on {
+  opacity: 1;
+}
+.banner ol {
+  background-image: url("../images/bg-q1.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  position: absolute;
+  bottom: 0;
+  display: block;
+  text-align: center;
+  width: 100%;
+  height: 60px;
+  z-index: 2;
+}
+.banner ol li {
+  display: inline-block;
+  margin: auto 3px;
+  list-style: none;
+  width: 3%;
+  height: 5px;
+  background-color: #fff;
+}
+.banner ol li:hover {
+  cursor: pointer;
+}
+.banner ol .activate {
+  background-color: #ff9900;
+}
+.banner:after {
+  height: 8px;
+  width: 100%;
+  background-color: #0b5ab0;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}

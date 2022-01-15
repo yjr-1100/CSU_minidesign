@@ -1,0 +1,77 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background: url("../images/bg.png");
+    height: 100%;
+    width: 100%;
+    background-size: 100% 100%;
+    background-attachment: fixed;
+}
+.logo{
+    margin-left: 5%;
+    margin-top: 15px;
+    height: 69px;
+    width: 450px;
+    position: relative;
+    display: inline-block;
+}
+.logo img{
+    width: 246px;
+    height: 69px;
+    margin: 10px;
+    display: inline-block;
+    position: absolute;
+    left: 0;
+}
+.logo span{
+    display: inline-block;
+    height: 38px;
+    line-height: 38px;
+    margin-left: 15px;
+    padding-left: 15px;
+    border-left: 1px solid #fff;
+    color: #fff;
+    font-size: 24px;
+    width: 150px;
+    position: absolute;
+    right: 0;
+    top: 25px;
+}
+.main{
+    background: rgba(245, 241, 241, 0.5);
+    width: 80%;
+    height: 600px;
+    margin: 0 auto;
+    margin-top: 50px;
+    padding: 50px;
+}
+table{
+    width: 80%;
+    margin: 0 auto;
+    font-size: 20px;
+    border-collapse: collapse;
+    border-top: 1px #585757 solid;
+	border-right: 1px #585757 solid;
+}
+.main table td{
+	width: 120px;
+	text-align:center;
+	border-bottom: 1px #585757 solid;
+	border-left: 1px #585757 solid;
+	padding: 10px;
+}
+.title{
+    font-weight: bold;
+}
+input{
+    border: none;
+    background: none;
+}
+.changuser,.deleteClass{
+    color: #551a8b;
+}
+.changuser:hover,.deleteClass:hover{
+    cursor: pointer;
+}

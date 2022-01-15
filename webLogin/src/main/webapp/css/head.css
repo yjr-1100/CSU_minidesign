@@ -1,0 +1,354 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+ul, li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+input {
+    background: none;
+    outline: none;
+    border: none;
+}
+
+.headenghead{
+    height: 6.875rem;
+    width: 100vw;
+    z-index: 1;
+}
+.head {
+    position: fixed;
+    top: 0;
+    height: 6.875rem;
+    width: 100vw;
+    background-image: url('../images/hd-bg1.png');
+    background-size: contain;
+    z-index: 999;
+}
+
+/* 搜索框 */
+.searchBox {
+    z-index: 10;
+    width: 40%;
+    position: absolute;
+    /*display: flex;*/
+    justify-content: flex-end;
+    top: 0;
+    right: 0;
+    text-align: center;
+    padding: 34px 30px 35px 60px;
+    background-image: url('../images/so-bg1.png');
+    display: none;
+}
+
+.searchBox .search {
+    border: #fff solid 1px;
+    border-radius: 50px;
+    width: 70%;
+    height: 39px;
+    display: flex;
+    padding: 0 0 0 15px;
+    /* float:right; */
+}
+
+.search .inputtext {
+    flex: 9;
+    font-size: 16px;
+    color: #ffffff;
+    height: 100%;
+    line-height: 100%;
+}
+
+.search .subbtn {
+    flex: 1;
+    height: 40px;
+    display: block;
+    background-image: url('../images/i-so.png');
+    background-repeat: no-repeat;
+    background-position: center;
+
+}
+
+.closesearchbtn {
+    background-image: url('../images/i-close.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 39px;
+    width: 50px;
+
+}
+
+/* 搜索按钮 */
+.searchbtn {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    width: 90px;
+    background-image: url('../images/so-btn.png');
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.searchbtn::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    margin-top: -20px;
+    left: 0;
+    width: 2px;
+    height: 40px;
+    background: url('../images/i-p3.png');
+}
+
+/* 导航 */
+.headwrap {
+    /* background-color: antiquewhite; */
+    max-width: 95.75rem;
+    min-width: 81.25rem;
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 10px;
+}
+
+.top, .nav {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.top-l, .top-r, .nav-r, .nav-l {
+    width: 35.625rem;
+}
+
+.top ul li, .nav ul li {
+    margin: 10px 15px;
+    font-size: .875rem;
+    color: #fff;
+}
+
+.top ul li:hover{
+    color: #ccdae9;
+    transition: .3s;
+}
+.top ul li:hover  i>img{
+    color: red;
+    transform: rotate(180deg);
+    transition: .1s;
+}
+.nav ul li .v1 {
+    display: block;
+    font-size: 1.25rem;
+    padding-bottom: 21px;
+    position: relative;
+    height: 100%;
+}
+.nav ul li .v1::after{
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    width: 0px;
+    height: 4px;
+    background-color: #0099ff;
+}
+.nav ul li:hover .v1::after{
+    left: 0;
+    transition: all .3s;
+    width: 100%;
+}
+
+.nav ul li:hover .v1:before{
+    content:'';
+    width: 2px;
+    height: 29px;
+    left: 50%;
+    top: 100%;
+    margin: 0px auto;
+    position: absolute;
+    background-color: #0099ff;
+    z-index: 10000;
+    transition: all 0.3s;
+}
+
+.top-l ul li, .nav-l ul li {
+    float: left;
+    position: relative;
+}
+
+.fix .top{
+    display: none;
+}
+
+.top-r ul li, .nav-r ul li {
+    float: right;
+    position: relative;
+}
+
+.head li a {
+    color: #fff;
+}
+ul li .sub{
+    position: absolute;
+    display: block;
+    top:76px;
+    left:-840px ;
+    width: 860px;
+    height: auto;
+    background-size: cover;
+    padding: 0 30px;
+    border-top: #0099ff 3px solid;
+    z-index: 20;
+    box-shadow: 0 0 10px rgb(0 0 0/20%);
+}
+
+
+.nav-l ul li .sub{
+    left: 0;
+}
+
+ul li .sub .clearfix a{
+    color: #000;
+}
+.sub .clearfix{
+    margin-left: 20px;
+}
+.sub dd a{
+    display: block;
+    margin: 20px 28px;
+    float: left;
+    font-size: 16px;
+}
+.sub dl{
+    width: 63%;
+    float: left;
+    /*margin-top: 20px;*/
+}
+
+.sub .navpic{
+    float: right;
+    width: 33%;
+}
+.sub .navpic .img{
+    width: 100%;
+    height: 100%;
+}
+.nav-l ul li .dh2{
+    display: none;
+    background-image: url(../images/navbg2.jpg);
+}
+.nav-l ul li .dh3{
+    display: none;
+    background-image: url(../images/navbg3.jpg);
+}
+.nav-l ul li .dh4{
+    display: none;
+    background-image: url(../images/navbg4.jpg);
+}
+.nav-l ul li .dh5{
+    display: none;
+    background-image: url(../images/navbg5.jpg);
+}
+.nav-r ul li .dh9{
+    display: none;
+    background-image: url(../images/navbg9.jpg);
+}
+.nav-r ul li .dh8{
+    display: none;
+    background-image: url(../images/navbg8.jpg);
+}
+.nav-r ul li .dh7{
+    display: none;
+    background-image: url(../images/navbg7.jpg);
+}
+.nav-r ul li .dh6{
+    display: none;
+    background-image: url(../images/navbg6.jpg);
+}
+
+.dd{
+    width: 415px;
+    height: 500px;
+    position: absolute;
+    overflow: hidden;
+    top: 20px;
+    right: 0px;
+    display: none;
+    z-index: 15;
+    background-color: #ffffff;
+    color: black;
+    box-shadow: 0 0 10px rgb(0 0 0 / 20%);
+    border-top: 3px solid #eb9c18;
+    margin-bottom: 0px;
+    padding: 21px 0 15px 26px;
+    padding-top: 21px;
+    padding-bottom: 15px;
+}
+
+
+#yanjiu{
+    width: 680px;
+    height: 400px;
+}
+#yanjiu + .dd:hover{
+    width: 680px;
+    height: 400px;
+}
+
+
+.head .dd a,.head .dd div{
+    color: black;
+    width: 50%;
+    float: left;
+    font-size: 14px;
+    display: block;
+    height: 32px;
+}
+#yanjiu a{
+    height: 40px;
+}
+
+
+/* logo图片*/
+.head .logo {
+    position: relative;
+    top: -50px;
+}
+
+.head .logo img {
+    height: 15rem;
+}
+.head  .logo1{
+    display: block;
+}
+.head .nav .logo2{
+    margin-top: 30px;
+    height: 9rem;
+    display: none;
+}
+
+
+
+.goBack{
+    width: 48px;
+    height: 59px;
+    background-image: url("../images/i-q5.png");
+    position: fixed;
+    bottom: 40px;
+    z-index: 999;
+    right: 100px;
+}
+
+.goBack:hover{
+    cursor: pointer;
+}

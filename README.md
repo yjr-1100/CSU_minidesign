@@ -38,8 +38,10 @@
 
 部分地方添加了错误处理，还有很多没有添加，由于课设写的匆忙，代码没有很高的独立逻辑模块划分，读起来略显麻烦，什么时候闲了想起来在回来看吧
 
-### 5.web实验（JavaWeb/Jsp/Html/Css/Javascript）
-本次实验任务为实现一个登录页面。具体要求如下：
+
+
+### 5.webLogin（JavaWeb/Jsp/Html/Css/Javascript	）
+上课javaweb的实验，本次实验任务为实现一个登录页面。具体要求如下：
 1. 实现前端页面的基本布局。要求：
    1. 布局类似于学校门户 http://my.csu.edu.cn/login/index.jsp
    2. 顶部需有 LOGO 栏目；
@@ -55,3 +57,30 @@
    2.  账号密码登录方式需进行验证，验证通过方能登录；
    3.  手机（邮箱）验证码需调用第三方短信接口发送验证码并进行验证；
    4.  后端实现技术不限、数据库系统不限。
+
+**使用注意**
+
+1. 使用mysql数据库，创建数据库web_shiyan和表user
+
+   ```
+   CREATE TABLE `web_shiyan`.`user`  (
+     `id` int NOT NULL AUTO_INCREMENT,
+     `username` varchar(15) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci NULL DEFAULT NULL,
+     `password` varchar(300) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci NULL DEFAULT NULL,
+     `phonenum` varchar(15) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci NULL DEFAULT NULL,
+     `mail` varchar(50) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci NULL DEFAULT NULL,
+     `isadmain` int NULL DEFAULT 0,
+     PRIMARY KEY (`id`) USING BTREE
+   ) ENGINE = InnoDB AUTO_INCREMENT = 50 CHARACTER SET = utf8mb4 COLLATE = utf8mb4_0900_ai_ci ROW_FORMAT = Dynamic;
+   ```
+
+2. 修改数据库配置 
+
+   ./webLogin/src/druid.properties 中的 username 和 password 
+
+3. 短信验证码使用[臻子云](https://blog.csdn.net/weixin_45691686/article/details/121654353)，需要注册并且填写相关信息 
+
+   填写 ./webLogin/src/main/java/yjr1100/utils/PhoneCode.java 中的 appId 和 appSecret
+
+这依旧是一个有bug的实验，数据库通过注册代码进行插入应该是没有问题的，手动修改可能会有报错，代码有些许冗余，没有使用前端和后端框架。
+
