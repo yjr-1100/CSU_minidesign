@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/my_nav"
+    app:startDestination="@id/mainActivity">
+
+    <activity
+        android:id="@+id/contantActivity"
+        android:name="com.yjr1100.qrcode.ContantActivity"
+        android:label="activity_contant"
+        tools:layout="@layout/activity_contant" >
+        <argument
+            android:name="phone"
+            app:argType="string"
+            android:defaultValue="-2" />
+    </activity>
+    <activity
+        android:id="@+id/mainActivity"
+        android:name="com.yjr1100.qrcode.MainActivity"
+        android:label="activity_main"
+        tools:layout="@layout/activity_main" >
+        <argument
+            android:name="phone"
+            app:argType="string"
+            android:defaultValue="-1" />
+    </activity>
+</navigation>

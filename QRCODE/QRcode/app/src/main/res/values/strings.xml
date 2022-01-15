@@ -1,0 +1,38 @@
+<resources>
+    <string name="app_name">QRcode</string>
+    <string name="tipsphone">请输入手机号</string>
+    <string name="tipspassword">请输入密码</string>
+    <string name="tipslogin">登录</string>
+    <string name="version">V 1.0.1</string>
+    <string name="userimg">用户头像</string>
+    <string name="tipsregister">注册</string>
+    <string name="title_activity_contant">ContantActivity</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="tipssubmit">提交</string>
+    <string name="senderphone">寄件人手机号</string>
+    <string name="sendername">寄件人姓名</string>
+    <string name="receveraddress">收件人地址</string>
+    <string name="receverphone">收件人手机号</string>
+    <string name="recevername">收件人姓名</string>
+    <string name="tipsgoodename">货物名称</string>
+    <string name="regtitle">用户注册</string>
+    <string name="tipspwdconfig">确认密码</string>
+    <string name="choseuser">用户</string>
+    <string name="regsender">邮递员</string>
+    <string name="regsub">提交注册</string>
+    <string name="tipsregusername">请输入用户名</string>
+    <string name="sendertitle">取件信息</string>
+    <string name="configsender">确认分配</string>
+    <string name="senderchosetitle">寄件员分配</string>
+    <string name="titlemanager">待审核快递</string>
+    <string name="mygoodes">我寄送的物品</string>
+    <string name="iplocal">http://10.0.2.2:8080/</string>
+    <string name="ip">http://192.168.1.4:8080/</string>
+    <string-array name="senderslist">
+        <item>a</item>
+        <item>b</item>
+        <item>c</item>
+    </string-array>
+</resources>

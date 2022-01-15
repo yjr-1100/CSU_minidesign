@@ -84,3 +84,63 @@
 
 这依旧是一个有bug的实验，数据库通过注册代码进行插入应该是没有问题的，手动修改可能会有报错，代码有些许冗余，没有使用前端和后端框架。
 
+
+
+### 6.QRCODE(Java/Android)
+
+一个移动应用开发的课设，扫码二维码可以获取物品信息，前后端代码
+
+课设要求：
+
+1. 编写Android客户端应用，通过扫描二维码就能获取收件人的信息；
+2. 对用JSP或PHP开发快递信息安全管理Web服务器；
+3. 用MySQL做快递信息安全管理Web服务器的后台数据库；
+4. 服务器端二维码生成模块，将用户个人信息经过加密后保存成一个二维码；
+5. 快递员的注册和登录功能；
+6. 快递信息后台安全管理功能，管理人员管理控制快递员能接触的收件人信息。
+
+
+
+本课设也使用mysql数据库，需要建goodes和user两个表，并且修改数据库配置
+
+1. 修改数据库配置 
+
+   ./webLogin/src/druid.properties 中的 username 和 password 
+
+2. 建表
+
+   ```
+   CREATE TABLE `qrcode`.`goodes`  (
+     `gid` int NOT NULL AUTO_INCREMENT,
+     `goodname` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci NULL DEFAULT NULL,
+     `senderphonenum` varchar(11) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci NOT NULL,
+     `sendername` varchar(11) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci NOT NULL,
+     `recphonenum` varchar(11) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci NOT NULL,
+     `recname` varchar(11) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci NOT NULL,
+     `recaddress` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci NOT NULL,
+     `qrcode` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci NULL DEFAULT NULL,
+     `sendtime` varchar(30) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci NOT NULL,
+     `s_id` int NULL DEFAULT NULL,
+     `u_id` int NULL DEFAULT NULL,
+     PRIMARY KEY (`gid`) USING BTREE,
+     INDEX `s_id`(`s_id`) USING BTREE,
+     INDEX `u_id`(`u_id`) USING BTREE,
+     CONSTRAINT `goodes_ibfk_2` FOREIGN KEY (`u_id`) REFERENCES `qrcode`.`user` (`uid`) ON DELETE RESTRICT ON UPDATE RESTRICT
+   ) ENGINE = InnoDB AUTO_INCREMENT = 21 CHARACTER SET = utf8mb4 COLLATE = utf8mb4_0900_ai_ci ROW_FORMAT = Dynamic;
+   ```
+
+   ```
+   CREATE TABLE `qrcode`.`user`  (
+     `uid` int NOT NULL AUTO_INCREMENT,
+     `username` varchar(15) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci NOT NULL,
+     `password` varchar(64) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci NOT NULL,
+     `phonenum` varchar(11) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci NOT NULL,
+     `identifier` int NULL DEFAULT NULL,
+     PRIMARY KEY (`uid`, `phonenum`) USING BTREE,
+     UNIQUE INDEX `phonenum`(`phonenum`) USING BTREE,
+     INDEX `uid`(`uid`) USING BTREE
+   ) ENGINE = InnoDB AUTO_INCREMENT = 11 CHARACTER SET = utf8mb4 COLLATE = utf8mb4_0900_ai_ci ROW_FORMAT = Dynamic;
+   ```
+
+   
+

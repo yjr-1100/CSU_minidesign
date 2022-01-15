@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#B4D7FF</color>
+    <color name="colorPrimaryDark">#B4D7FF</color>
+    <color name="colorAccent">#E79B4A</color>
+    <color name="loginbtncolor">#A65DC6EF</color>
+    <color name="hoverbtncolor">#A690D2F1</color>
+    <color name="white">#FFFFFF</color>
+    <color name="submit">#A679D9FF</color>
+    <color name="viewfinder_mask">#60000000</color>
+    <color name="result_view">#B0000000</color>
+    <color name="viewfinder_frame">#90FFFFFF</color>
+    <color name="result_point_color">#C0FFFF00</color>
+    <color name="laser_color">#0F0</color>
+    <color name="corner_color">#00FF00</color>
+    <color name="sdfsdf">#84BCF9</color>
+    <color name="bbbbb">#BDDAFA</color>
+</resources>

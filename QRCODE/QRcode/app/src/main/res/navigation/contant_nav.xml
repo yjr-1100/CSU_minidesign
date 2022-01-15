@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/my_nav"
+    app:startDestination="@id/itemslist">
+    <fragment
+        android:id="@+id/itemslist"
+        android:name="com.yjr1100.qrcode.itemslist"
+        android:label="fragment_itemslist"
+        tools:layout="@layout/fragment_itemslist" >
+        <action
+            android:id="@+id/action_itemslist_to_edititem"
+            app:destination="@+id/edititem" />
+    </fragment>
+    <fragment
+        android:id="@+id/edititem"
+        android:name="com.yjr1100.qrcode.edititem"
+        android:label="fragment_edititem"
+        tools:layout="@layout/fragment_edititem" >
+        <action
+            android:id="@+id/action_edititem_to_itemslist"
+            app:destination="@id/itemslist" />
+    </fragment>
+</navigation>
